@@ -1,0 +1,273 @@
+/*DARK MODE*/
+body {
+    transition: 0.3s;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.light-theme {
+    background-color: var(--cor-1);
+    color: var(--cor-6);
+}
+
+.light-dark {
+    background-color: var(--cor-5);
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 20px;
+    width: 50px;
+}
+
+.light-dark .ball {
+    background-color: var(--cor-2);
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+
+    height: 24px;
+    width: 24px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .light-dark .ball {
+    transform: translateX(30px);
+}
+
+
+
+
+
+
+
+/*ESTILOS GERAIS*/
+.light-theme .logo .logo-dark {
+    display: none;
+}
+.light-theme .logo .logo-light {
+    display: block;
+}
+
+.light-theme header {
+    background-color: var(--cor-1);
+}
+
+.light-theme .header-menu {
+    background-color: var(--cor-1);
+}
+
+.light-theme .header-menu a {
+    color: var(--cor-6);
+}
+
+/*PSEUDO ELEMENTO*/
+.light-theme .header-menu a::after {
+    background: var(--cor-6);
+}
+
+
+
+
+
+
+/*SEÇÃO PRINCIPAL*/
+.light-theme .introducao h1 {
+    color: var(--cor-6);
+}
+
+.light-theme .introducao strong {
+    color: var(--cor-6);
+}
+
+.light-theme .introducao p {
+    color: var(--cor-6);
+}
+
+.light-theme .redes-black {
+    display: block;
+}
+
+.light-theme .redes-light {
+    display: none;
+}
+
+.light-theme .botao2 {
+    background: var(--cor-1);
+}
+
+.light-theme .botao2:hover {
+    background: linear-gradient(var(--cor-1), #c8cccf);
+}
+
+
+
+
+
+/*SOBRE*/
+.light-theme .info h2 {
+    color: var(--cor-6);
+}
+
+.light-theme .info-pessoal p {
+    color: var(--cor-6);
+}
+
+
+
+
+
+/*FORMAÇÃO*/
+.light-theme .formacao {
+    background-color: var(--cor-0);
+    box-shadow: -10px 10px 10px 8px rgba(0, 0, 0, 0.25);
+}
+
+.light-theme .formacao-titulo h2 {
+    color: var(--cor-6);
+}
+
+.light-theme .formacao h3 {
+    color: var(--cor-6);
+}
+
+.light-theme .formacao ul li {
+    color: var(--cor-6);
+}
+
+.light-theme .formacao p {
+    color: var(--cor-6);
+}
+
+
+
+
+
+.light-theme .stacks {
+    background-color: var(--cor-0);
+    box-shadow: -10px 10px 10px 8px rgba(0, 0, 0, 0.25);
+}
+
+.light-theme .stacks-titulo h2 {
+    color: var(--cor-6);
+}
+
+
+
+
+/*PROJETOS*/
+.light-theme .projetos-titulo h2 {
+    color: var(--cor-6);
+}
+
+.light-theme .projeto-descricao p {
+    color: var(--cor-6);
+}
+
+.light-theme .links li {
+    color: var(--cor-6);
+}
+
+.light-theme .nav-manual .manual-btn, .nav-auto div {
+    border: 1px solid var(--cor-3);
+}
+
+
+
+
+
+/*CONTATO*/
+.light-theme .contato-bg {
+    background: linear-gradient(var(--cor-1) 270px, var(--cor-3) 0px);
+}
+
+.light-theme .contato-titulo h2 {
+    color: var(--cor-6);
+}
+
+.light-theme .contato-geral {
+    background-color: var(--cor-1);
+}
+
+.light-theme .contato-conversa h3 {
+    color: var(--cor-6);
+}
+
+
+/*FORMULÁRIO*/
+.light-theme .form input[type="text"],
+.light-theme .form input[type="email"],
+.light-theme .form textarea {
+    background: var(--cor-0);
+    border: 1px solid var(--cor-2);
+}
+
+.light-theme .form input[type="text"]:focus,
+.light-theme .form input[type="email"]:focus,
+.light-theme .form textarea:focus {
+    outline: none;
+    border-color: var(--cor-2);
+    background: var(--cor-1);
+}
+
+
+
+/*FOOTER*/
+.light-theme .footer-bg {
+    background-color: var(--cor-3);
+}
+
+.light-theme .footer p {
+    color: var(--cor-0);
+}
+
+.light-theme .footer-light {
+    display: block;
+}
+
+.light-theme .footer-dark {
+    display: none;
+}
+
+.light-theme .logo-footer-light {
+    display: block;
+}
+.light-theme .logo-footer-dark {
+    display: none;
+}
+
+
+
+
+/*RESPONSIVIDADE*/
+/*MENU MOBILE*/
+@media (max-width: 700px) {
+    .light-theme #menu {
+        right: 0;
+        background: var(--cor-2);
+    }
+    .light-theme #menu li {
+        border-bottom: solid 1px var(--cor-0);
+    }
+
+    .light-theme #btn-mobile {
+        color: var(--cor-6);
+    }
+
+    /*PSEUDO ELEMENTO*/
+    .header-menu a::after {
+        display: none;
+    }
+
+    /*PSEUDO ELEMENTO*/
+    .light-theme .header-menu li:hover {
+        background-color: var(--cor-3);
+    }
+}

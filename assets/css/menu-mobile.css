@@ -1,0 +1,103 @@
+.menu-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 58px;
+        right: 0;
+        background: var(--cor-8);
+        height: 0;
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: auto;
+    }
+
+    .menu-mobile.active #menu {
+        height: calc(100vh - 58px);
+        visibility: visible;
+    }
+
+    #menu li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: solid 2px var(--cor-5);
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 18px;
+        color: var(--cor-1);
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 8px;
+    }
+
+    #hamburguer {
+        display: block;
+        width: 20px;
+        border-top: 2px solid;
+    }
+
+    #hamburguer::after,
+    #hamburguer::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    .menu-mobile.active #hamburguer {
+        border-top-color: transparent;
+    }
+
+    .menu-mobile.active #hamburguer::before {
+        transform: rotate(135deg);
+    }
+
+    .menu-mobile.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    /*PSEUDO ELEMENTO*/
+    .header-menu a::after {
+        display: none;
+    }
+
+    /*PSEUDO ELEMENTO*/
+    .header-menu li:hover {
+        background-color: var(--cor-5);
+    }
+}
+
+
+@media (max-width: 370px)  {
+    .menu-mobile {
+        gap: 4px;
+    }
+
+    #btn-mobile {
+        font-size: 16px;
+    }
+
+}

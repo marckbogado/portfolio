@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcelo Bogado</title>
+    <link rel="shortcut icon" href="img/icones/LogoP 1.svg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animacao.css">
+    <link rel="stylesheet" href="assets/css/menu-mobile.css">
+    <link rel="stylesheet" href="assets/css/componentes.css">
+    <link rel="stylesheet" href="assets/css/dark-theme.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+    
+
+
+</head>
+<body class="dark-theme">
+
+    <!--MENU NAVEGAÇÃO-->
+    <header id="fixo">
+        <nav class="header-menu container">
+            <div class="logo">
+                <img class="logo-dark" src="img/LogoMarck.png" alt="Logo Marcelo Bogado">
+                <img class="logo-light"  src="img/icones/LogoMarck-Light.svg" alt="Logo Marcelo Bogado">
+            </div>
+            <nav class="menu-mobile">
+                <div>
+                    <input class="checkbox" type="checkbox" name="change-theme" id="change-theme">
+                    <label class="light-dark" for="change-theme">
+                        <img class="icon-dark sun" src="img/icones-lightTheme/sun.svg" alt="">
+                        <img class="icon-dark moon" src="img/icones-lightTheme/moon.svg" alt="">
+
+                        <div class="ball"></div>
+                    </label>
+                </div>
+                
+                <button aria-label="Abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+                    <span id="hamburguer"></span>
+                </button>
+                <ul class="cor-1" id="menu" role="menu">
+                    <li><a href="#sobre"class="link-nav1">Sobre</a></li>
+                    <li><a href="#formacao"class="link-nav2">Formação</a></li>
+                    <li><a href="#projetos"class="link-nav3">Projetos</a></li>
+                    <li><a href="#contato"class="link-nav4">Contato</a></li>
+                </ul>
+            </nav>
+        </nav>
+    </header>
+
+
+    <!--INTRODUÇÃO-->
+    <main class="home container">
+        <div class="introducao">
+            <h1 class="cor-1" data-anime="200">Olá!<br>Sou <strong class="cor-0" data-anime="200">Marcelo Bogado</strong></h1>
+            <h2 class="cor-7 fadeInLeft" data-anime="300">Desenvolvedor Web</h2>
+            <p class="cor-1">Olá sou desenvolvedor web Jr. / analista de sistemas, em constante aprendizado, apaixonado por programação. Seja bem vindo ao meu site!</p>
+            <a href="#sobre" class="botao">Sobre mim <img src="img/icones/chevronDir.svg" alt="Seta para a direita"></a>
+
+            <div class="redes-sociais">
+                <a href="https://github.com/marckbogado" target="_blank" class="redes-light"><img src="img/icones/mdi_github-branco.svg" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/marcelo-bogado/" target="_blank" class="redes-light"><img src="img/icones/pajamas_linkedin.svg" alt="Linkedin"></a>
+                <a href="http://wa.me/5551986395244" target="_blank" class="redes-light"><img src="img/icones/whats-branco-capa.svg" alt="Whatsapp"></a>
+
+                <!--Icones light mode-->
+                <a href="https://github.com/marckbogado" target="_blank" class="redes-black"><img src="img/icones-lightTheme/github-black-capa.svg" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/marcelo-bogado/" target="_blank" class="redes-black"><img src="img/icones-lightTheme/linkedin-black-capa.svg" alt="Linkedin"></a>
+                <a href="http://wa.me/5551986395244" target="_blank" class="redes-black"><img src="img/icones-lightTheme/whats-black-capa.svg" alt="Whatsapp"></a>
+            </div>
+        </div>
+
+        <div class="imagem-principal">
+            <img src="img/principal.png" alt="Imagem principal da página">
+        </div>
+    </main>
+
+
+    <!--SOBRE-->
+    <section class="container js-scroll" id="sobre" aria-label="Sobre">
+        <div class="info">
+            <h2 class="cor-1">Sobre mim</h2>
+        </div>
+        <div class="sobre">
+            <img src="img/foto perfil.png" alt="Marcelo Bogado">
+            <div class="info-pessoal">
+                <p class="cor-1">Olá!  Me chamo Marcelo Correia Bogado, estou atualmente em transição de carreira para a área de tecnologia (sou formado Técnico em Edificações desde 2013).
+                Em 2021 decidi iniciar o curso de <span>Análise e Desenvolvimento de Sistemas</span>, e em paralelo comecei a estudar por conta própria através de cursos, dedicando horas do dia para os estudos em casa. Sou uma pessoa apaixonada pelos estudos e em constante aprendizado e evolução. Agora em busca da minha primeira experiência! Desenvolvo principalmente em <span>PHP</span>, mas possuo habilidades também em <span>Javascript</span>. Outras tecnologias: <span>HTML</span>, <span>CSS</span>, <span>Laravel</span>, <span>ReactJs</span>, <span>MySQL</span>.</p>
+                <div class="mais-sobre">
+                    <a href="#contato" class="botao">Contato <img src="img/icones/chevronDir.svg" alt="Seta para a direita"></a>
+                    <a href="#formacao" class="botao2">Mais sobre mim <img src="img/icones/chevron-Dir-red.png" alt="Seta para a direita"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--FORMAÇAO-->
+    <section class="formacao-geral container js-scroll" id="formacao" aria-label="Formação">
+        <div class="formacao">
+            <div class="formacao-titulo">
+                <h2 class="cor-1">Formação</h2>
+            </div>
+            <span class="cor-3 tecnologo"><img src="img/icones/diploma.svg" alt="Diploma"> Tecnólogo</span>
+            <h3 class="cor-1">Análise e Desenvolvimento de Sistemas</h3>
+            <p class="cor-3 tecnologo-after">Tecnólogo em andamento na faculdade Anhanguera Educacional.</p>
+
+            <span class="cor-3 cursos-intensivos"><img src="img/icones/livro.svg" alt="Livro">Cursos Intensivos</span>
+            <ul class="cursos">
+                <li class="cor-1">HTML e CSS para iniciantes <span class="cor-3">23hr</span></li>
+                <li class="cor-1">Javascript Completo ES6 <span class="cor-3">37hr</span></li>
+                <li class="cor-1">React Completo <span class="cor-3">18hr</span></li>
+                <li class="cor-1">PHP8 Completo <span class="cor-3">33.5hr</span></li>
+            </ul>
+
+            <span class="cor-3 idiomas"><img src="img/icones/idiomas.svg" alt="Idiomas">Idiomas</span>
+            <p class="cor-1">Inglês <span class="cor-3">/ avançado</span></p>
+        </div>
+
+        <div class="stacks">
+            <div class="stacks-titulo">
+                <h2 class="cor-1">Stacks desenvolvidas</h2>
+            </div>
+
+            <div class="tecnologias formacao-dark">
+                <div class="tecnologia-descricao">
+                    <img src="img/icones/php.svg" alt="PHP">
+                    <p class="cor-3">PHP</p>
+                </div>
+                <div class="tecnologia-descricao">
+                    <img src="img/icones/laravel.svg" alt="Laravel">
+                    <p class="cor-3">Laravel</p>
+                </div>
+                <div class="tecnologia-descricao">
+                    <img src="img/icones/html.svg" alt="HTML5">
+                    <p class="cor-3">HTML5</p>
+                </div>
+                <div class="tecnologia-descricao">
+                    <img src="img/icones/css.svg" alt="CSS3">
+                    <p class="cor-3">CSS3</p>
+                </div>
+            </div>
+            <div class="tecnologias2 formacao-dark">
+                <div class="tecnologia-descricao">
+                    <img src="img/icones/javascript.svg" alt="Javascript">
+                    <p class="cor-3">Javascript</p>
+                </div>
+                <div class="tecnologia-descricao">
+                    <img src="img/icones/react.svg" alt="React">
+                    <p class="cor-3">React</p>
+                </div>
+                <div class="tecnologia-descricao">
+                    <img src="img/icones/mysql.svg" alt="MySQL">
+                    <p class="cor-3">MySQL</p>
+                </div>
+            </div>
+            <div class="pseudoelemento"></div>
+        </div>
+    </section>
+
+
+    <!--PROJETOS-->
+    <section class="projetos container js-scroll" id="projetos" aria-label="Projetos">
+        <div class="titulo projetos-titulo">
+            <h2 class="cor-1">Alguns projetos desenvolvidos</h2>
+        </div>
+
+        <!--PROJETO 01-->
+        <div class="projeto-geral">
+            <div class="projeto-imagem">
+                <div class="slider-content">
+                    <input type="radio" name="btn-radio" id="radio1">
+                    <input type="radio" name="btn-radio" id="radio2">
+                    <input type="radio" name="btn-radio" id="radio3">
+
+                    <div class="slide-box primeiro">
+                        <img class="img-desktop" src="img/projetos/bikcraft-Desk.png" alt="Bikcraft">
+                        <img class="img-mobile" src="img/projetos/bikcraft-Mob.png" alt="Bikcraft">
+                    </div>
+                    <div class="slide-box">
+                        <img class="img-desktop" src="img/projetos/bikcraft2-Desk.png" alt="Bikcraft">
+                        <img class="img-mobile" src="img/projetos/bikcraft2-Mob.png" alt="Bikcraft">
+                    </div>
+                    <div class="slide-box">
+                        <img class="img-desktop" src="img/projetos/bikcraft3-Desk.png" alt="Bikcraft">
+                        <img class="img-mobile" src="img/projetos/bikcraft3-Mob.png" alt="Bikcraft">
+                    </div>
+
+                    <div class="nav-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                    </div>
+
+                    <div class="nav-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label></label>
+                        <label for="radio3" class="manual-btn"></label></label>
+                    </div>
+                </div>
+            </div>
+            <div class="projeto-descricao">
+                <h3 class="cor-7">Bikcraft</h3>
+                <p class="cor-1">Projeto de uma empresa fictícia de bicicletas. Desenvolvido durante o curso de HTML/CSS da plataforma Origamid. Focado principalmente em HTML e CSS, possuindo funcionalidades em Javascript</p>
+                <div class="tecnologias-usadas">
+                    <img title="HTML" src="img/icones/html-P.svg" alt="">
+                    <img title="CSS" src="img/icones/css-P.svg" alt="">
+                    <img title="Javascript" src="img/icones/javascript-P.svg" alt="">
+                </div>
+                <ul class="links">
+                    <a href="https://marckbogado.github.io/bikcraft/" target="_blank">
+                        <li class="cor-1"><img src="img/icones/link-rounded.svg" alt=""> visitar</li>
+                    </a>
+                    <a href="https://github.com/marckbogado/bikcraft" target="_blank">
+                        <li class="cor-1"><img src="img/icones/mdi_github-P.svg" alt=""> código</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+
+        <!--PROJETO 02-->
+        <div class="projeto-geral">
+            <div class="projeto-imagem">
+                <div class="imagem">
+                    <p>LOADING...</p>
+                </div>
+            </div>
+            <div class="projeto-descricao">
+                <h3 class="cor-7">Projeto 02</h3>
+                <p class="cor-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus debitis cupiditate doloremque dolor rem, sit architecto. Sint inventore quia, odio nisi ipsa fugit ratione quo ipsam dolores quisquam distinctio ab!</p>
+                <div class="tecnologias-usadas">
+                    <img src="img/icones/php-P.svg" alt="">
+                    <img src="img/icones/laravel-P.svg" alt="">
+                    <img src="img/icones/html-P.svg" alt="">
+                    <img src="img/icones/css-P.svg" alt="">
+                </div>
+                <ul class="links">
+                    <a href="">
+                        <li class="cor-1"><img src="img/icones/link-rounded.svg" alt=""> visitar</li>
+                    </a>
+                    <a href="">
+                        <li class="cor-1"><img src="img/icones/mdi_github-P.svg" alt=""> código</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--CONTATO-->
+    <section class="contato-bg js-scroll" id="contato" aria-label="Contato">
+        <div class="contato-titulo  container">
+            <h2 class="cor-1">Contato</h2>
+        </div>
+
+        <div class="contato-geral container">
+            <div class="contato-conteudo">
+                <div class="contato-conversa">
+                    <div>
+                        <h3 class="cor-1">Vamos conversar?</h3>
+                        <p class="cor-3">Estou disponível para novos projetos. Entre em contato comigo e marcamos uma conversa!</p>
+                    </div>
+                    <div class="contato-imagem">
+                        <img src="img/contato-M.png" alt="Homem com telefone">
+                    </div>
+                </div>
+                <!--CONTATO-FORMULÁRIO-->
+                <div class="form">
+                    <form action="./" class="formulario">
+                        <div>
+                            <label for="nome" class="cor-1">Nome</label>
+                            <input type="text" name="nome" id="nome" placeholder="Nome">
+                        </div>
+                        <div>
+                            <label for="telefone" class="cor-1">Telefone</label>
+                            <input type="text" name="telefone" id="telefone" placeholder="(51) 99999-9999">
+                        </div>
+                        <div class="coluna-2">
+                            <label for="email" class="cor-1">Email</label>
+                            <input type="email" name="email" id="email" placeholder="contato@email.com">
+                        </div>
+                        <div class="coluna-2">
+                            <label for="mensagem" class="cor-1">Mensagem</label>
+                            <textarea name="mensagem" id="mensagem" cols="30" rows="5" placeholder="Mande sua mensagem!"></textarea>
+                        </div>
+                        <button class="botao coluna-2">Enviar Mensagem</button>
+                    </form>
+                </div>
+                        </div>
+            </div>
+
+    </section>
+
+
+    <!--FOOTER-->
+    <footer class="footer-bg">
+        <div class="footer container">
+            <div class="logo-footer">
+                <img class="logo-footer-dark" src="img/icones/LogoMarckCinza.png" alt="Logo Marcelo Bogado">
+                <img class="logo-footer-light" src="img/icones-lightTheme/LogoMarck-footer-white.svg" alt="Logo Marcelo Bogado">
+            </div>
+            <p class="cor-3">© 2023 - Marcelo Bogado - Alguns direitos reservados</p>
+            <div class="footer-redes">
+                <a href="http://wa.me/5551986395244" target="_blank" class="footer-dark"><img src="img/icones/whatsCinzaM.svg" alt="Whatsapp"></a>
+                <a href="mailto:marckbogado@gmail.com" target="_blank" class="footer-dark"><img src="img/icones/emailCinzaM.svg" alt="E-mail"></a>
+                <a href="https://www.linkedin.com/in/marcelo-bogado/" target="_blank" class="footer-dark"><img src="img/icones/linkedinCinzaM.svg" alt="Linkedin"></a>
+                <a href="https://www.instagram.com/marcelo.bogado.14/" target="_blank" class="footer-dark"><img src="img/icones/insta-grey-footer.svg" alt="GitHub"></a>
+                
+                <!--light mode-->
+                <a href="http://wa.me/5551986395244" target="_blank" class="footer-light"><img src="img/icones-lightTheme/whats-footer-white.svg" alt="Whatsapp"></a>
+                <a href="mailto:marckbogado@gmail.com" target="_blank" class="footer-light"><img src="img/icones-lightTheme/email--footer-white.svg" alt="E-mail"></a>
+                <a href="https://www.linkedin.com/in/marcelo-bogado/" target="_blank" class="footer-light"><img src="img/icones-lightTheme/linkedin-footer-white.svg" alt="Linkedin"></a>
+                <a href="https://www.instagram.com/marcelo.bogado.14/" target="_blank" class="footer-light"><img src="img/icones-lightTheme/insta-footer-white.svg" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="./assets/js/plugins/simple-anime.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+</body>
+</html>
